@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cables - Tecno Amigos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056A3;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .search-bar {
+            flex-grow: 2;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: linear-gradient(to bottom, red, white);
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="3.png" alt="Logo Tecno Amigos">
+    <h1>TECNO AMIGOS</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="¿Qué estás buscando?">
+    </div>
+</header>
+
+<nav>
+    <a href="#">Accesorios</a>
+    <a href="#">Audio</a>
+    <a href="#">Cables</a>
+    <a href="#">Almacenamiento</a>
+    <a href="#">Componentes</a>
+    <a href="#">Celulares</a>
+    <a href="#">Laptops</a>
+</nav>
+
+<div class="banner">
+    Cables y Conectores - ¡Nuevos ingresos!
+</div>
+
+<section class="product-grid">
+    <div class="product">
+        <img src="21.png" alt="Cable USB Tipo C">
+        <h3>Cable USB Tipo C</h3>
+        <p>S/ 20.00</p>
+        <button onclick="alert('Cable Tipo C agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="22.png" alt="Cable HDMI">
+        <h3>Cable HDMI 2.0</h3>
+        <p>S/ 35.00</p>
+        <button onclick="alert('Cable HDMI agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="23.png" alt="Cable Lightning">
+        <h3>Cable Lightning</h3>
+        <p>S/ 45.00</p>
+        <button onclick="alert('Cable Lightning agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="24.png" alt="Extensión USB">
+        <h3>Extensión USB 3.0</h3>
+        <p>S/ 30.00</p>
+        <button onclick="alert('Extensión USB agregada al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="25.png" alt="Splitter Audio">
+        <h3>Splitter de Audio</h3>
+        <p>S/ 15.00</p>
+        <button onclick="alert('Splitter de audio agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="26.png" alt="Cable VGA">
+        <h3>Cable VGA</h3>
+        <p>S/ 28.00</p>
+        <button onclick="alert('Cable VGA agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="27.png" alt="Adaptador RJ45">
+        <h3>Adaptador RJ45</h3>
+        <p>S/ 40.00</p>
+        <button onclick="alert('Adaptador RJ45 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="28.png">
+        <h3>Cable Jack 3.5mm</h3>
+        <p>S/ 12.00</p>
+        <button onclick="alert('Cable Jack agregado al carrito')">Agregar</button>
+    </div>
+</section>
+
+<script>
+    console.log('Página Cables con 8 productos cargada.');
+</script>
+
+</body>
+</html>

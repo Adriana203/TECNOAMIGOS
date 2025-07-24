@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Componentes - Tecno Amigos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056A3;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .search-bar {
+            flex-grow: 2;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: linear-gradient(to bottom, red, white);
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="3.png" alt="Logo Tecno Amigos">
+    <h1>TECNO AMIGOS</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="¿Qué estás buscando?">
+    </div>
+</header>
+
+<nav>
+    <a href="#">Accesorios</a>
+    <a href="#">Audio</a>
+    <a href="#">Cables</a>
+    <a href="#">Almacenamiento</a>
+    <a href="#">Componentes</a>
+    <a href="#">Celulares</a>
+    <a href="#">Laptops</a>
+</nav>
+
+<div class="banner">
+    Componentes - ¡Equipos y repuestos originales!
+</div>
+
+<section class="product-grid">
+    <div class="product">
+        <img src="41.png" alt="Procesador">
+        <h3>Procesador Ryzen 5 5600G</h3>
+        <p>S/ 620.00</p>
+        <button onclick="alert('Procesador agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="42.png" alt="Placa Madre">
+        <h3>Placa Madre MSI B450M</h3>
+        <p>S/ 450.00</p>
+        <button onclick="alert('Placa madre agregada al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="43.png" alt="Memoria RAM">
+        <h3>Memoria RAM 16GB DDR4</h3>
+        <p>S/ 350.00</p>
+        <button onclick="alert('Memoria RAM agregada al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="44.png" alt="Fuente de Poder">
+        <h3>Fuente de Poder 650W</h3>
+        <p>S/ 280.00</p>
+        <button onclick="alert('Fuente de poder agregada al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="45.png" alt="Tarjeta Gráfica">
+        <h3>Tarjeta Gráfica GTX 1660</h3>
+        <p>S/ 1,200.00</p>
+        <button onclick="alert('Tarjeta gráfica agregada al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="46.png" alt="Disipador">
+        <h3>Disipador RGB</h3>
+        <p>S/ 150.00</p>
+        <button onclick="alert('Disipador agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="47.png" alt="Gabinete">
+        <h3>Gabinete ATX Gamer</h3>
+        <p>S/ 350.00</p>
+        <button onclick="alert('Gabinete agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="48.png" alt="Ventilador">
+        <h3>Ventilador RGB 120mm</h3>
+        <p>S/ 45.00</p>
+        <button onclick="alert('Ventilador agregado al carrito')">Agregar</button>
+    </div>
+</section>
+
+<script>
+    console.log('Página Componentes con 8 productos cargada.');
+</script>
+
+</body>
+</html>

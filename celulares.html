@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Celulares - Tecno Amigos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056A3;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .search-bar {
+            flex-grow: 2;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: linear-gradient(to bottom, red, white);
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="3.png" alt="Logo Tecno Amigos">
+    <h1>TECNO AMIGOS</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="¿Qué estás buscando?">
+    </div>
+</header>
+
+<nav>
+    <a href="#">Accesorios</a>
+    <a href="#">Audio</a>
+    <a href="#">Cables</a>
+    <a href="#">Almacenamiento</a>
+    <a href="#">Componentes</a>
+    <a href="#">Celulares</a>
+    <a href="#">Laptops</a>
+</nav>
+
+<div class="banner">
+    Celulares y Smartphones - ¡Nuevos modelos!
+</div>
+
+<section class="product-grid">
+    <div class="product">
+        <img src="51.png" alt="Samsung Galaxy A14">
+        <h3>Samsung Galaxy A14</h3>
+        <p>S/ 899.00</p>
+        <button onclick="alert('Samsung A14 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="52.png" alt="iPhone 13">
+        <h3>iPhone 13 128GB</h3>
+        <p>S/ 3,499.00</p>
+        <button onclick="alert('iPhone 13 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="53.png" alt="Redmi Note 12">
+        <h3>Redmi Note 12</h3>
+        <p>S/ 1,150.00</p>
+        <button onclick="alert('Redmi Note 12 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="54.png" alt="Motorola G73">
+        <h3>Motorola G73</h3>
+        <p>S/ 1,250.00</p>
+        <button onclick="alert('Motorola G73 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="55.png" alt="iPhone 15">
+        <h3>iPhone 15 Pro Max</h3>
+        <p>S/ 6,999.00</p>
+        <button onclick="alert('iPhone 15 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="56.png" alt="Realme C67">
+        <h3>Realme C67</h3>
+        <p>S/ 950.00</p>
+        <button onclick="alert('Realme C67 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="57.png" alt="Samsung Galaxy S24">
+        <h3>Samsung Galaxy S24</h3>
+        <p>S/ 4,599.00</p>
+        <button onclick="alert('Samsung S24 agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="58.png" alt="Honor 90">
+        <h3>Honor 90</h3>
+        <p>S/ 2,290.00</p>
+        <button onclick="alert('Honor 90 agregado al carrito')">Agregar</button>
+    </div>
+</section>
+
+<script>
+    console.log('Página Celulares con 8 productos cargada.');
+</script>
+
+</body>
+</html>

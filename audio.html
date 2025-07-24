@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio - Tecno Amigos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056A3;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .search-bar {
+            flex-grow: 2;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: linear-gradient(to bottom, red, white);
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="3.png" alt="Logo Tecno Amigos">
+    <h1>TECNO AMIGOS</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="¿Qué estás buscando?">
+    </div>
+</header>
+
+<nav>
+    <a href="#">Accesorios</a>
+    <a href="#">Audio</a>
+    <a href="#">Cables</a>
+    <a href="#">Almacenamiento</a>
+    <a href="#">Componentes</a>
+    <a href="#">Celulares</a>
+    <a href="#">Laptops</a>
+</nav>
+
+<div class="banner">
+    Productos de Audio - ¡Hasta 30% dscto.!
+</div>
+
+<section class="product-grid">
+    <div class="product">
+        <img src="11.png" alt="Parlante Bluetooth">
+        <h3>Parlante Bluetooth</h3>
+        <p>S/ 150.00</p>
+        <button onclick="alert('Parlante agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="12.png" alt="Audífonos Inalámbricos">
+        <h3>Audífonos Inalámbricos</h3>
+        <p>S/ 220.00</p>
+        <button onclick="alert('Audífonos agregados al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="13.png" alt="Barra de sonido">
+        <h3>Barra de Sonido</h3>
+        <p>S/ 399.00</p>
+        <button onclick="alert('Barra de sonido agregada al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="14.png" alt="Audífonos Gamer">
+        <h3>Audífonos Gamer</h3>
+        <p>S/ 185.00</p>
+        <button onclick="alert('Audífonos Gamer agregados al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="15.png" alt="Micrófono USB">
+        <h3>Micrófono USB</h3>
+        <p>S/ 135.00</p>
+        <button onclick="alert('Micrófono agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="16.png" alt="Audífonos con cable">
+        <h3>Audífonos con Cable</h3>
+        <p>S/ 75.00</p>
+        <button onclick="alert('Audífonos con cable agregados al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="17.png" alt="Parlante Portátil">
+        <h3>Parlante Portátil</h3>
+        <p>S/ 90.00</p>
+        <button onclick="alert('Parlante portátil agregado al carrito')">Agregar</button>
+    </div>
+    <div class="product">
+        <img src="18.png" alt="Controlador de Audio">
+        <h3>Controlador de Audio</h3>
+        <p>S/ 310.00</p>
+        <button onclick="alert('Controlador de audio agregado al carrito')">Agregar</button>
+    </div>
+</section>
+
+<script>
+    console.log('Página Audio con 8 productos cargada.');
+</script>
+
+</body>
+</html>
